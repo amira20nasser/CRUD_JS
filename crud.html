@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="crud">
+        <header class="head">
+            <h2>crud</h2>
+            <p>PRODUCT MANAGEMENT SYSTEM</p>
+        </header>
+        <div class="inputs">
+            <input type="text" name="title" id="title" placeholder="Title">
+            <div class="price">
+                <input type="number" name="price" id="price" placeholder="Price">
+                <input type="number" name="taxes" id="taxes" placeholder="Taxes">
+                <input type="number" name="ads" id="ads" placeholder="ads">
+                <input type="number" name="discount" id="discount" placeholder="Discount">
+
+                <small id="total">311</small>
+            </div>
+            <input type="number" name="count" id="count" placeholder="Count">
+            <input type="text" name="category" id="category" placeholder="Category">
+            <button type="button" id="submit">Create</button>
+        </div>
+        <div class="outputs">
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Search...">
+                <div class="button-search">
+                    <button id="search-title">Search by Title</button>
+                    <button id="search-category">Search by Category</button>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Taxes</th>
+                        <th>Ads</th>
+                        <th>Discount</th>
+                        <th>Total</th>
+                        <!-- <th>Count</th> -->
+                        <th>Category</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Sample Product</td>
+                        <td>100</td>
+                        <td>10</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>120</td>
+                        <!-- <td>10</td> -->
+                        <td>Electronics</td>
+                        <td><button class="update">Update</button></td>
+                        <td><button class="delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Sample Product</td>
+                        <td>100</td>
+                        <td>10</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>120</td>
+                        <!-- <td>10</td> -->
+                        <td>Electronics</td>
+                        <td><button class="update">Update</button></td>
+                        <td><button class="delete">Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
